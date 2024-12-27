@@ -2,13 +2,13 @@
 Author Rutuja Khade
 
 TASK 1 :  Titanic Survival Prediction
-Aim
+<br>Aim : 
 The aim of this project is to build a model that predicts whether a passenger on the Titanic survived or not based on given features.
 
-Dataset
+<br>Dataset :
 The dataset for this project is imported from a CSV file, "archive.zip". The dataset contains information about passengers on the Titanic, including their survival status, class (Pclass), sex (Gender), and age (Age).
 
-Libraries Used
+<br>Libraries Used :
 The following important libraries were used for this project:
 
 numpy
@@ -18,7 +18,7 @@ seaborn
 sklearn.preprocessing.LabelEncoder
 sklearn.model_selection.train_test_split
 sklearn.linear_model.LogisticRegression
-Data Exploration and Preprocessing
+<br>Data Exploration and Preprocessing :
 The dataset was loaded using pandas as a DataFrame, and its shape and a glimpse of the first 10 rows were displayed using df.shape and df.head(10).
 Descriptive statistics for the numerical columns were displayed using df.describe() to get an overview of the data, including missing values.
 The count of passengers who survived and those who did not was visualized using sns.countplot(x=df['Survived']).
@@ -27,27 +27,27 @@ The count of survivals was visualized with respect to the gender using sns.count
 The survival rate by gender was calculated and displayed using df.groupby('Sex')[['Survived']].mean().
 The 'Sex' column was converted from categorical to numerical values using LabelEncoder from sklearn.preprocessing.
 After encoding the 'Sex' column, non-required columns like 'Age' were dropped from the DataFrame.
-Model Training
+<br>Model Training :
 The feature matrix X and target vector Y were created using relevant columns from the DataFrame.
 The dataset was split into training and testing sets using train_test_split from sklearn.model_selection.
 A logistic regression model was initialized and trained on the training data using LogisticRegression from sklearn.linear_model.
-Model Prediction
+<br>Model Prediction:
 The model was used to predict the survival status of passengers in the test set.
 The predicted results were printed using log.predict(X_test).
 The actual target values in the test set were printed using Y_test.
 A sample prediction was made using log.predict([[2, 1]]) with Pclass=2 and Sex=Male (1).
 
-TASK2 : Movie Rating Prediction
-Project Overview
+<br>TASK2 : Movie Rating Prediction
+<br>Project Overview :
 The goal of this project is to build a model that predicts the rating of a movie based on various features such as genre, director, and actors. This involves analyzing historical movie data and developing a regression model to estimate the rating given to a movie by users or critics.
 
-Objectives
-Data Analysis: Investigate the dataset to understand its structure, identify patterns, and uncover insights related to movie ratings.
-Preprocessing: Clean and prepare the data for modeling. This involves handling missing values, converting data types, and formatting features.
-Feature Engineering: Transform raw data into meaningful features that can improve model performance.
-Model Building: Use regression techniques to build a predictive model for movie ratings.
-Evaluation: Assess the performance of the model using metrics such as mean squared error, mean absolute error, and R-squared score.
-Dataset
+<br>Objectives:
+<br>Data Analysis: Investigate the dataset to understand its structure, identify patterns, and uncover insights related to movie ratings.
+<br>Preprocessing: Clean and prepare the data for modeling. This involves handling missing values, converting data types, and formatting features.
+<br>Feature Engineering: Transform raw data into meaningful features that can improve model performance.
+<br>Model Building: Use regression techniques to build a predictive model for movie ratings.
+<br>Evaluation: Assess the performance of the model using metrics such as mean squared error, mean absolute error, and R-squared score.
+<br>Dataset :
 The dataset includes the following features:
 
 Name: Title of the movie.
